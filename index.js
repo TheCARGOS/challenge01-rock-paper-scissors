@@ -53,32 +53,17 @@ function resetValues () {
 function gameLogic (yourChoice, homeChoice) {
     if ( yourChoice == homeChoice ) {
         renderResult("IT'S A DRAW", 0)
+    } else if (
+        (yourChoice == "paper" && homeChoice == "rock") ||
+        (yourChoice == "rock" && homeChoice == "scissors") ||
+        (yourChoice == "scissors" && homeChoice == "paper")
+    ) {
+        renderResult("YOU WIN", 1)
     } else {
-        if (yourChoice == "paper") {
-            if (homeChoice == "scissors") {
-                renderResult("YOU LOSE", -1)
-            } else {
-                renderResult("YOU WIN", 1)
-            }
-        } else {
-            if (yourChoice == "scissors") {
-                if (homeChoice == "paper") {
-                    renderResult("YOU WIN", 1)
-                } else {
-                    renderResult("YOU LOSE", -1)
-                }
-            } else {
-                // human must been choosen 'rock'
-                if (homeChoice == "paper") {
-                    renderResult("YOU LOSE", -1)
-                } else {
-                    renderResult("YOU WIN", 1)
-                }
-            }
-
-        }
+        renderResult("YOU LOSE", -1)
     }
 }
+
 
 function renderResult (message, pts) {
     results.style.opacity = "1"
