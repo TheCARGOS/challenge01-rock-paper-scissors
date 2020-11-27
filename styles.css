@@ -43,7 +43,7 @@ html {
     width: 25rem;
     height: 7rem;
     border: 2px solid #9aa7bb;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 0.83rem 1.66rem;
     font-weight: bolder;
     font-size: 1.33rem;
@@ -240,7 +240,7 @@ html {
     .header {
         width: 700px;
         height: 150px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .header__score-div {
