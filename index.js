@@ -83,7 +83,7 @@ function renderStep (step) {
 function renderYourChoice (choice) {
     step2.children[0].innerHTML = `
         <button class="choice-btn choice-btn--${choice}">
-            <img class="choice__img" src=./images/icon-${choice}.svg />
+            <img class="choice__img" src=./images/icon-${choice}.svg alt="you choice" />
         </button>
         <span class="choice__span">YOU PICKED</span>        
     `
@@ -99,7 +99,7 @@ function renderHomeChoice (choice) {
     setTimeout( () => {
         step2.children[1].innerHTML = `
             <button class="choice-btn choice-btn--${choice}">
-                <img class="choice__img" src=./images/icon-${choice}.svg />
+                <img class="choice__img" src=./images/icon-${choice}.svg alt="your choice" />
             </button>        
             <span class="choice__span">THE HOUSE PICKED</span>        
         `
