@@ -43,7 +43,7 @@ html {
     width: 25rem;
     height: 7rem;
     border: 2px solid #9aa7bb;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 0.83rem 1.66rem;
     font-weight: bolder;
     font-size: 1.33rem;
@@ -56,7 +56,7 @@ html {
     align-items: center;
     background-color: #f9f9f9;
     padding: 0.5rem 1.41rem;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .header__score-div__span {
@@ -172,7 +172,7 @@ html {
 
 .results__btn {
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 5px;
     min-width: 100%;
     border: none;
     line-height: 3;
@@ -192,7 +192,10 @@ html {
     font-weight: bolder;
     font-size: 14px;
     color: #f9f9f9;
-    padding: 1rem 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    padding-right: 36px;
     background: transparent;
     border: 2px solid #9aa7bb;
     letter-spacing: 3px;
@@ -236,7 +239,23 @@ html {
     
     .header {
         width: 700px;
+        height: 150px;
         font-size: 1.5rem;
+    }
+
+    .header__score-div {
+        padding: 20px 22px;
+        width: 150px;
+        height: 113px;
+    }
+
+    .header__score-div__span {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .header__score-div__score {
+        font-size: 52px;
     }
 
     .choice {
